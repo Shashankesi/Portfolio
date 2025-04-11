@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashank Kumar | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-ZNBkZ+yRxGKx+Ay7wHTcHxkqDCIYozqPoOn7t7WGH4b7Z2MAmzFUl8qJv5X0U8nFhY4cO2vUuVhP0G+R+8m86A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <canvas id="universe"></canvas>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile-pic">
+        <img src="profile.jpg" alt="Your Photo" />
+      </div>
+      <h2 class="name">Shashank Kumar</h2>
+      <p class="role"><span class="typed-text">Web Developer</span><span class="cursor">&nbsp;</span></p>
+
+      <div class="contact-info">
+        <div><strong>Email:</strong> shashankesi224@gmail.com</div>
+        <div><strong>Phone:</strong> +91 62014 60006</div>
+        <div><strong>DOB:</strong> 05/12/2004</div>
+      </div>
+
+      <div class="motto">
+        <q>“Code is like humor. When you have to explain it, it’s bad.”</q>
+      </div>
+
+      <div class="live-clock" id="clock"></div>
+
+      <div class="currently-learning">
+        <h3>Currently Learning</h3>
+        <ul>
+          <li>Next.js</li>
+          <li>Tailwind CSS</li>
+          <li>API Integration</li>
+        </ul>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://github.com/Shashankesi" target="_blank" title="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/shashank-kumar-846b24289" target="_blank" title="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter">
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <nav class="navbar">
+        <a href="#about" class="nav-link active" data-section="about">About</a>
+        <a href="#resume" class="nav-link" data-section="resume">Resume</a>
+        <a href="#certificates" class="nav-link" data-section="certificates">Certificates</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div id="dynamic-section">
+       <!-- About Section -->
+<section id="about" class="content-section">
+  <h1>About Me</h1>
+  <p>Hi, I’m Shashank Kumar, a passionate and driven Computer Science Engineering student at Chandigarh University. I specialize in front-end web development and have hands-on experience with Selenium WebDriver and TestNG for automating website testing.</p>
+  <p>I’m always eager to learn, take on new challenges, and grow as a developer and QA automation enthusiast. If you’re looking for someone who’s enthusiastic about building modern web interfaces and ensuring quality through automation—let’s connect!</p>
+  
+  <h1>Portfolio</h1>
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Web Dev Icon" />
+      <h3>Web Development</h3>
+      <p>Building high-performance, scalable, and responsive websites.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Icon" />
+      <h3>Python</h3>
+      <p>Writing powerful backend scripts, data analysis, and automation tools.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ Icon" />
+      <h3>Competitive Programming</h3>
+      <p>Solving algorithmic problems using C++ and data structures.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="TestNG Icon" />
+      <h3>TestNG Testing</h3>
+      <p>Structuring test automation suites using the TestNG framework.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium Icon" />
+      <h3>Selenium Automation</h3>
+      <p>Automating browser actions and regression tests with Selenium.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="ML Icon" />
+      <h3>Machine Learning</h3>
+      <p>Creating models to make predictions and automate decision-making.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="content-section" style="display: none; color: #fff;">
+  <h1>Resume</h1>
+  <a href="Shashank.pdf" class="download-resume" target="_blank">Download My Resume</a>
+
+  <h2><i class="fa-solid fa-user-graduate"></i> Education</h2>
+  <ul class="education-list">
+    <li><i class="fa-solid fa-university"></i> Bachelor of Engineering, CSE - Chandigarh University<br><small>08/2023 – 08/2027 | Chandigarh</small></li>
+    <li><i class="fa-solid fa-school"></i> Higher Secondary - B L Indo Angalian Public School<br><small>04/2021 – 03/2023 | Aurangabad, Bihar</small></li>
+    <li><i class="fa-solid fa-school"></i> Secondary - The Mahabodhi Tree<br><small>04/2020 – 03/2021 | Gaya, Bihar</small></li>
+  </ul>
+  
+
+  <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+
+  <div class="project-card">
+    <h3>Weather Monitoring System Using IoT</h3>
+    <p>Tracks and analyzes weather conditions in real time using sensors and Arduino.</p>
+    <ul>
+      <li>Tools: Arduino, Sensors</li>
+      <li>Accuracy: 95%</li>
+      <li>Real-time data monitoring</li>
+    </ul>
+  </div>
+
+  <div class="project-card">
+    <h3>Educational Resource Website</h3>
+    <p>A centralized web platform designed to help students discover and learn from YouTube’s best educational content, filtered by learning levels (Beginner, Intermediate, Advanced) across 20+ subjects. Includes PDF study materials, curated for each course.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>House Price Prediction Model</h3>
+    <p>Predicts house prices based on features like location, size, etc.</p>
+    <ul>
+      <li>Tools: Python, Pandas, NumPy</li>
+      <li>Goal: Accurate property price prediction</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Certificates Section (replacing Portfolio) -->
+<section id="certificates" class="content-section" style="display: none;">
+  <h1>Certificates</h1>
+  <p>Here are some of my certifications that showcase my learning journey and skill development.</p>
+
+  <div class="certificates-grid">
+    <div class="certificate-card">
+      <img src="certificates/frontend.jpg" alt="Frontend Development Certificate">
+      <h3>Frontend Development</h3>
+      <p>Completed an advanced course in modern front-end technologies including HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="certificate-card">
+      <img src="certificates/selenium.jpg" alt="Selenium Certificate">
+      <h3>Selenium WebDriver</h3>
+      <p>Hands-on experience automating test cases using Selenium and TestNG.</p>
+    </div>
+    <div class="certificate-card">
+      <img src="certificates/python.jpg" alt="Python Certificate">
+      <h3>Python Programming</h3>
+      <p>Completed Python fundamentals and data analysis course with projects.</p>
+    </div>
+    <!-- Add more certificates as needed -->
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="content-section" style="display: none;">
+  <h1>Contact Me</h1>
+  <p>If you’d like to get in touch, feel free to send me an email or use the form below.</p>
+  
+  <div class="contact-container">
+    <form action="https://formspree.io/f/mpwpkvqv" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    
+    
+    <div class="contact-email">
+      <p><strong>Email:</strong> <a href="mailto:shashankesi224@gmail.com">shashankesi224@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+
+      </div>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
