@@ -162,4 +162,12 @@ function toggleCertificates() {
   const certSection = document.getElementById("certificates");
   certSection.style.display = certSection.style.display === "none" ? "block" : "none";
 }
+sections.forEach(section => {
+  section.classList.remove('active');
+  section.style.display = 'none';
+});
+const target = document.getElementById(targetId);
+target.style.display = 'block';
+requestAnimationFrame(() => target.classList.add('active'));
+
 

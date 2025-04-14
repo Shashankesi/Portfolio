@@ -25,12 +25,39 @@ body, html {
     background-color: rgba(20, 20, 20, 0.95);
     padding: 2rem;
     width: 280px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 30px rgba(255,255,255,0.05);
   }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
   
+    .sidebar {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .main-content {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  @media (max-width: 480px) {
+  .sidebar img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skills-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
   .profile-pic img {
     width: 120px;
     height: 120px;
@@ -462,75 +489,47 @@ body, html {
 .contact-email a:hover {
   text-decoration: underline;
 }
-/* Entire Certificates Section */
-#certificates {
-  padding: 60px 20px;
-  background-color: #0b1120; /* Navy-Dark Background */
-  color: #ffffff;
-  font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-#certificates h1 {
-  text-align: center;
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-  color: #ffcc00;
-}
-
-#certificates p {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 1rem;
-  color: #cccccc;
-}
-
-/* Grid for certificate cards */
 .certificates-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
 
-/* Card Styling */
 .certificate-card {
-  background-color: #1a1f2e;
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
   padding: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 247, 255, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #eee;
   text-align: center;
-  overflow: hidden;
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 247, 255, 0.2);
 }
 
 .certificate-card img {
   width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  border: 2px solid #ffcc00;
+  max-height: 200px;
   object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .certificate-card h3 {
-  font-size: 1.3rem;
-  color: #ffcc00;
-  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #00ffff;
+  margin-bottom: 10px;
 }
 
 .certificate-card p {
-  font-size: 0.9rem;
-  color: #bbbbbb;
-}
-
-.certificate-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+  font-size: 0.95rem;
+  color: #ccc;
 }
 
 /* Make everything look tight inside window */
@@ -539,6 +538,48 @@ body, html {
   padding: 0;
   overflow-x: hidden;
 }
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.7);
+  z-index: 999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 60%;
+  height: auto;
+  margin-top: 18%;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 255, 170, 1);
+}
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
+  }
+  50% {
+    box-shadow: 0 0 20px #25D366, 0 0 40px #25D366;
+  }
+  100% {
+    box-shadow: 0 0 10px #25D366, 0 0 20px #25D366;
+  }
+}
+
+.whatsapp-float {
+  animation: pulse-glow 2s infinite;
+}
+
 
 
 
